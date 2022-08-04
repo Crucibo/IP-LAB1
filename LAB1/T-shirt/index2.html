@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Website</title>
+  </head>
+   <body>
+    <section>
+        <p><h2>Order Details</Details></h2></p>
+        <p><b>Your Order: </b></p>
+        <img src="Images/Image.jpeg"
+        width="300">
+        <br>
+        <br>
+        <form>
+            <div>
+                <label for="text-tshirt">Enter your text: </label><br>
+                <input type="text" id="text-tshirt">
+            </div>
+            <br>
+            <p>Choose Color: </p>
+            <div>
+             <input type="color" id="colorpicker" value="##ffffff">
+            </div>
+            <br>
+            <p>Select your size:</p>
+            <select aria-label="Default select example">
+            <option selected>Select Size</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+            </select>
+            <br><br>
+            <p>Select Quantity:</p>
+            <div>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" max="5">
+            </div>
+            <br>
+            <section>
+                <label for="date">Select delivery date:</label>
+                <input type="date" id="date" name="date" value="2022-08-01" min="2022-08-08" max="2022-12-31">
+            </section>
+            <br> 
+            <hr>   
+            <p>Apply Code:</p>
+            <input type="text" id="text" name="discount">
+            <input type="submit" value="Submit">
+            <br>
+            <p>Order Value: $29.99</p>
+            <p>Taxes & charges: $3.5</p>
+            <p>Code NEW50: -$5</p>
+            <p>Grand Total: $28.5</p>
+            <br>
+            <p>We accept: </p>
+            <div>
+                <select aria-label="Default select example">
+                <option selected>Payment method</option>
+                <option value="1">Cash on delivery</option>
+                <option value="2">MasterCard</option>
+                <option value="3">VISA</option>
+                <option value="4">RuPay</option>
+                <option value="5">EMI</option>
+                <option value="6">UPI</option>
+                </select>
+            </div><br><br>
+            <hr>
+            <br>
+                <fieldset>
+                    <legend>Personalia:</legend>
+                    <label for="fname">First Name: </label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last Name: </label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="address">Address: </label><br><br>
+                    <textarea name="address" id="address" cols="20" rows="3" maxlength="200" placeholder="Enter your address here"></textarea><br><br>
+                    <label for="Contact No">Contact No: </label>
+                    <input type="tel" name="Contact" id="Contact" maxlength="10"><br><br>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email">
+                </fieldset>
+                <br><br>
+                <button type="button">Place Order</button>
+        </form>
+    </section>
+  </body>
+</html>
